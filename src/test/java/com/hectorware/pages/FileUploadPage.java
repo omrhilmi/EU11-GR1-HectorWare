@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class FileUploadPage {
 
+    // File Upload Trial
     public FileUploadPage() {
         PageFactory.initElements(Driver.getDriver(),this);
     }
