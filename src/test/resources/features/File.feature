@@ -1,5 +1,5 @@
 Feature: File upload / copy / delete
-@wip
+
   Scenario: Login to the website
     Given User on the login page
     When User enter valid credentials
