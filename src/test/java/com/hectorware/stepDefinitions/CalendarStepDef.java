@@ -1,6 +1,4 @@
 package com.hectorware.stepDefinitions;
 
-public class TalkStepDefinitions {
-
-
+public class CalendarStepDef {
 }
