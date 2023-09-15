@@ -5,14 +5,17 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"html:target/cucumber-reports.html"
+@CucumberOptions(plugin = {
+        //"pretty",
+        "json:target/cucumber.json",
+        "html:target/cucumber-reports.html"
         ,
         "me.jvt.cucumber.report.PrettyReports:target/cucumber"} ,
 
         features = "src/test/resources/features",
-        glue = "com/hectorware/stepDefinitions" ,
+        glue = "com/Hectorware/stepDefinitions" ,
         dryRun =false ,
-        tags = "" //when you push the code to please leave this part empty
+        tags = "@wip"
 
 )
 public class CukesRunner {
