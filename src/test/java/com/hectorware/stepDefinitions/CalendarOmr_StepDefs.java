@@ -6,10 +6,7 @@ import io.cucumber.java.en.When;
 
 public class CalendarOmr_StepDefs {
 
-    @Given("the user login to the app")
-    public void the_user_login_to_the_app() {
-        // Write code here that turns the phrase above into concrete actions
-    }
+
     @When("the user clicks on the Calendar tab")
     public void the_user_clicks_on_the_calendar_tab() {
         // Write code here that turns the phrase above into concrete actions

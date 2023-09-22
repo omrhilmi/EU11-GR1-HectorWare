@@ -12,6 +12,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 public class NotesStepDef {
 
     NotesFunction appPage = new NotesFunction();
@@ -50,7 +52,7 @@ public class NotesStepDef {
     @Then("User should see the Notes page")
     public void user_should_see_notesPage() {
 
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), (10));
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(10));
     }
 
     @Then("User should click the + sign")
