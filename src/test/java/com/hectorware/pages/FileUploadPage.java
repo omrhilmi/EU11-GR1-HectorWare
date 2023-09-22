@@ -22,10 +22,10 @@ public class FileUploadPage {
     @FindBy(css = "#appmenu > li:nth-child(2) > a")
     public WebElement fileButton;
 
-    @FindBy(css = "#controls > div.actions.creatable > a")
+    @FindBy(xpath = "//span[@class='icon icon-add']")
     public WebElement plusButton;
 
-    @FindBy(xpath = "//label[@class='menuitem']")
+    @FindBy(xpath = "//span[text()='Upload file']")
     public WebElement uploadFileButton;
 
     @FindBy(xpath = "//*[@id=\"fileList\"]/tr[4]/td[2]/a/span[3]/a[2]/span[1]")

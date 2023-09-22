@@ -4,11 +4,11 @@ import io.cucumber.java.en.*;
 
 public class profileHalim_StepDefs {
 
-    @Given("the user login to the app")
-    public void the_user_login_to_the_app() {
-        // Write code here that turns the phrase above into concrete actions
-
-    }
+//    @Given("the user login to the app")
+//    public void the_user_login_to_the_app() {
+//        // Write code here that turns the phrase above into concrete actions
+//
+//    }
     @When("the user clicks on the Profile avatar")
     public void the_user_clicks_on_the_profile_avatar() {
         // Write code here that turns the phrase above into concrete actions

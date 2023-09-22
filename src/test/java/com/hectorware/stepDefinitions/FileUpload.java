@@ -14,9 +14,9 @@ import java.time.Duration;
 public class FileUpload {
 
     FileUploadPage webPage = new FileUploadPage();
-    @Given("User on the login page")
+    @Given("user on the login page")
     public void user_on_the_login_page() {
-        Driver.getDriver().get("https://qa.meetsky.net/index.php/login");
+        Driver.getDriver().get("https://qa.hectorware.com/index.php/login#/");
     }
     @When("User enter valid credentials")
     public void user_enter_valid_credentials() {
@@ -60,6 +60,8 @@ public class FileUpload {
 //        Assert.assertTrue("File is uploaded", fileName.contains("cydeo"));
 
     }
+
+
 
 
 }
