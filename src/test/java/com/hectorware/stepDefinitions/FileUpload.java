@@ -45,7 +45,7 @@ public class FileUpload {
     public void user_should_select_upload_file_from_dropdown() {
         String path = "/Users/tolgaaltan/Downloads/cydeo.jpeg";
 
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),(10));
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(webPage.uploadFileButton));
         webPage.uploadFileButton.sendKeys(path);
 
