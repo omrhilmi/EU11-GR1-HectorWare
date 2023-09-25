@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import javax.xml.xpath.XPath;
+
 public class FileUploadPage {
     public FileUploadPage() {
         PageFactory.initElements(Driver.getDriver(),this);
@@ -19,7 +21,7 @@ public class FileUploadPage {
     @FindBy(xpath ="//input[@id='submit-form']" )
     public WebElement loginButton;
 
-    @FindBy(css = "#appmenu > li:nth-child(2) > a")
+    @FindBy(xpath = "//*[@id=\"appmenu\"]/li[2]/a")
     public WebElement fileButton;
 
     @FindBy(xpath = "//span[@class='icon icon-add']")
@@ -28,9 +30,15 @@ public class FileUploadPage {
     @FindBy(xpath = "//span[text()='Upload file']")
     public WebElement uploadFileButton;
 
-    @FindBy(xpath = "//*[@id=\"fileList\"]/tr[4]/td[2]/a/span[3]/a[2]/span[1]")
-    public WebElement deleteButton;
 
+    @FindBy(xpath="//span[2]/a[2]")
+    public WebElement threeDots;
+
+    @FindBy(xpath = "//*[@id=\"rightClickMenu\"]/ul/li[3]/a")
+    public WebElement RenameFile;
+
+    @FindBy(xpath = "//*[@id=\"fileList\"]/tr[2]/td[2]/div/ul/li[8]/a")
+    public WebElement deleteFile;
 
 
 
