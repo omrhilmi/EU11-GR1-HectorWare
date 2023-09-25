@@ -13,6 +13,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
+import static java.time.Duration.ofSeconds;
+
 public class FileUpload {
 
     FileUploadPage webPage = new FileUploadPage();
