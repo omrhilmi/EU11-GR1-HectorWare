@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/hectorware/stepDefinitions" ,
         dryRun =false ,
-        tags = "" //when you push the code to please leave this part empty
+        tags = "@WARE-833" //when you push the code to please leave this part empty
 
 )
 public class CukesRunner {
