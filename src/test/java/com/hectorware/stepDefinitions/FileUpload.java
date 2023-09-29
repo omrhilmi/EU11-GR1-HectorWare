@@ -34,19 +34,19 @@ public class FileUpload {
     }
     @Then("User click on the file tab")
     public void user_click_on_the_file_tab() {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), (10));
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
         webPage.fileButton.click();
     }
     @Then("User should click + sign")
     public void user_should_click_sign() {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), (10));
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
         webPage.plusButton.click();
 
     }
 
     @Then("User should select Upload File from dropdown")
     public void user_should_select_upload_file_from_dropdown() {
-        String path = "/Users/tolgaaltan/Desktop/TEST_QA.docx";
+        String path = "//Users/tolgaaltan/Desktop/TEST_QA.docx";
 
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(webPage.uploadFileButton));

@@ -27,7 +27,7 @@ public class FileUploadPage {
     @FindBy(xpath = "//span[@class='icon icon-add']")
     public WebElement plusButton;
 
-    @FindBy(xpath = "//span[text()='Upload file']")
+    @FindBy(xpath = "//*[@id=\"controls\"]/div[2]/div[2]/ul/li[1]/label")
     public WebElement uploadFileButton;
 
 
